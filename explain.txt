@@ -1,0 +1,21 @@
+Question 3: What is the output of the following code. Explain
+
+let obj = {};
+obj[1] = 'One';
+obj['1'] = 'String One';
+
+console.log(obj[1]);
+console.log(obj['1']);
+console.log(obj[1] === obj['1']);
+
+The above code will give the following output:
+String One
+String One
+true
+
+Explanation
+line 1: let obj = {}; --> this line declares an empty object variable
+line 2: obj[1] = 'One'; --> this line assigns the value 'One' to the object obj at the index 1
+line 3: obj['1'] = 'String One'; this line assigns the value 'String One' to the object obj at the index 1,
+                                 since javascript is not strict on data types; 1 is interprated the same as '1', 
+                                 hence the initial assignment is overwritten
