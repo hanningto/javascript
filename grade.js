@@ -15,6 +15,10 @@ function marksTotal(marks_array) {
 }
 
 function checkGrade(totalMarks, examType) {
+  //checking for the A+ marks for Final exam
+  if (examType === "Final" && totalMarks >= 90 && totalMarks <= 100) {
+    console.log("Excellent job, you got an A+ in your " + examType);
+  }
   if (totalMarks >= 89 && totalMarks <= 100) {
     console.log("Excellent job, you got an A+ in your " + examType);
   } else if (totalMarks >= 80 && totalMarks <= 88) {
