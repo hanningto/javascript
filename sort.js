@@ -25,9 +25,9 @@ for(let i = 0; i<3; i++){
             var hold = library1[i]
             library1[i] = library1[x]
             library1[x] = hold
-            // console.log("object");
+            
         }
-        // console.log(library1.length);
+        
 
     }
 }
