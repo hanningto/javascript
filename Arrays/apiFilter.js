@@ -1,4 +1,4 @@
-function apiFilter() {
+function apiFilter(requested) {
   const users = [
     {
       id: 1,
@@ -119,6 +119,7 @@ function apiFilter() {
         }
       });
     });
+    return active
   }
   //funtion to find the average likes per user
   function average_likes() {
@@ -149,14 +150,30 @@ function apiFilter() {
       let likes_count = likes.filter((like) => {
         return like >= 10;
       });
+      return likes_count
     });
+    return popular
   }
 
-switch(requested){
-  case "Active Users":
-    return active_users()
-    break
-  case "Popular Post":
-    return 
+if (requested === "Active Users" ){
+  let out =  active_users()
+  return out
+
+}
+else if(requested === "Popular Post"){
+  return popular_posts()
+
+}
+else if(requested === "Average Likes" ){
+  return average_likes()
+}
+else{
+  return "invalid request"
 }
 }
+
+// //request opyions include
+// "Active Users"
+// "Popular Post"
+// "Average Likes"
+console.log(apiFilter("Popular")); 
