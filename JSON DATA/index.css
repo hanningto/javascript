@@ -1,0 +1,50 @@
+@media only screen and (min-width:1200px ){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin: 10px;
+    }
+    div{
+        /* border: 2px solid black; */
+        /* width: 30em;// */
+        /* margin: 30px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -1px 6px 17px 4px rgba(43,35,35,0.75);
+        border-radius: 11px 11px 11px 12px;
+        /* height: 400px; */
+    
+    }
+    img{
+        width: 100%;
+        height: 180px;
+        border-radius: 11px 11px 0px 0px;
+        filter: saturate(213%);    }
+    titl{
+        font-weight: bolder;
+    }
+    button{
+        background-color: rgb(7, 7, 131);
+        color: white;
+        width: 80px;
+        height: 40px;
+        border: none;
+        border-radius: px;
+        font: bold;
+    }
+    bigDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid grey;
+        width: 100%;
+        border-radius: 0px 0px 11px 12px;
+        background-color: antiquewhite;
+    
+    
+    }
+}
